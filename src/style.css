@@ -421,6 +421,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+html, body, #root {
+  height: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  height: calc(100% - 6rem);
+  display: flex;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -464,4 +482,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
 }
