@@ -12,6 +12,9 @@ module.exports = {
         active: '#282828',
         link: '#b3b3b3',
         footer: '#181818'
+      },
+      fontsize: {
+        s: '0,813rem'
       }
     },
   },
